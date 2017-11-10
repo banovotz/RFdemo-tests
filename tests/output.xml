@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20171110 14:56:30.628" generator="Robot 3.0.2 (Python 2.7.10 on darwin)">
+<suite source="/Users/ban/Documents/GitSource/RFdemo-tests/tests/login_tests.robot" id="s1" name="Login Tests">
+<test id="s1-t1" name="Given">
+<kw name="the user is on the login page">
+<msg timestamp="20171110 14:56:30.733" level="FAIL">No keyword with name 'the user is on the login page' found.</msg>
+<status status="FAIL" endtime="20171110 14:56:30.733" starttime="20171110 14:56:30.733"></status>
+</kw>
+<status status="FAIL" endtime="20171110 14:56:30.733" critical="yes" starttime="20171110 14:56:30.728">No keyword with name 'the user is on the login page' found.</status>
+</test>
+<test id="s1-t2" name="When">
+<kw name="the user provides correct credentials">
+<msg timestamp="20171110 14:56:30.739" level="FAIL">No keyword with name 'the user provides correct credentials' found.</msg>
+<status status="FAIL" endtime="20171110 14:56:30.740" starttime="20171110 14:56:30.738"></status>
+</kw>
+<status status="FAIL" endtime="20171110 14:56:30.740" critical="yes" starttime="20171110 14:56:30.734">No keyword with name 'the user provides correct credentials' found.</status>
+</test>
+<status status="FAIL" endtime="20171110 14:56:30.741" starttime="20171110 14:56:30.630"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="2" pass="0">Critical Tests</stat>
+<stat fail="2" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="2" id="s1" name="Login Tests" pass="0">Login Tests</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20171110 14:56:30.728" level="ERROR">Error in file '/Users/ban/Documents/GitSource/RFdemo-tests/tests/login_tests.robot': Importing test library 'pageobjects' failed: ImportError: No module named pageobjects
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /usr/local/bin
+  /Library/Python/2.7/site-packages/setuptools-18.1-py2.7.egg
+  /Library/Python/2.7/site-packages
+  /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python27.zip
+  /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7
+  /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/plat-darwin
+  /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/plat-mac
+  /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/plat-mac/lib-scriptpackages
+  /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/lib-tk
+  /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/lib-old
+  /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/lib-dynload
+  /Library/Python/2.7/site-packages/newrelic-2.78.0.57</msg>
+</errors>
+</robot>

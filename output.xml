@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20171110 18:20:53.731" generator="Robot 3.0.2 (Python 2.7.10 on darwin)">
+<suite source="/Users/ban/Documents/GitSource/RFdemo-tests/login_tests.robot" id="s1" name="Login Tests">
+<test id="s1-t1" name="Valid Login">
+<kw type="setup" name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${ROOT_WEB_DIR}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20171110 18:20:53.840" level="INFO">Opening browser 'googlechrome' to base url 'http://localhost:7272/'</msg>
+<status status="PASS" endtime="20171110 18:20:55.942" starttime="20171110 18:20:53.840"></status>
+</kw>
+<kw name="Given the user is on the login page" library="keywords">
+<kw name="Go To Page" library="PageObjectLibrary">
+<tags>
+<tag>page-object</tag>
+<tag>selenium</tag>
+</tags>
+<doc>Go to the url for the given page object</doc>
+<arguments>
+<arg>LoginPage</arg>
+</arguments>
+<msg timestamp="20171110 18:20:55.968" level="INFO">Opening url 'http://localhost:7272/index.html'</msg>
+<status status="PASS" endtime="20171110 18:20:56.048" starttime="20171110 18:20:55.943"></status>
+</kw>
+<status status="PASS" endtime="20171110 18:20:56.048" starttime="20171110 18:20:55.943"></status>
+</kw>
+<kw name="When the user provides correct credentials" library="keywords">
+<kw name="Enter Username" library="LoginPage">
+<doc>Type the given text into the username field</doc>
+<arguments>
+<arg>${USERNAME}</arg>
+</arguments>
+<msg timestamp="20171110 18:20:56.049" level="INFO">Typing text 'demo' into text field 'id=username_field'</msg>
+<status status="PASS" endtime="20171110 18:20:56.169" starttime="20171110 18:20:56.049"></status>
+</kw>
+<kw name="Enter Password" library="LoginPage">
+<doc>Type the given text into the password field</doc>
+<arguments>
+<arg>${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20171110 18:20:56.169" level="INFO">Typing text 'mode' into text field 'id=password_field'</msg>
+<status status="PASS" endtime="20171110 18:20:56.259" starttime="20171110 18:20:56.169"></status>
+</kw>
+<kw name="Click Login Button" library="LoginPage">
+<msg timestamp="20171110 18:20:56.267" level="INFO">Clicking button 'id=login_button'.</msg>
+<status status="PASS" endtime="20171110 18:20:56.614" starttime="20171110 18:20:56.260"></status>
+</kw>
+<status status="PASS" endtime="20171110 18:20:56.614" starttime="20171110 18:20:56.048"></status>
+</kw>
+<kw name="Then the user should be redirected to his dashboard" library="keywords">
+<kw name="The Current Page Should Be" library="PageObjectLibrary">
+<doc>Fails if the name of the current page is not the given page name</doc>
+<arguments>
+<arg>DashboardPage</arg>
+</arguments>
+<status status="PASS" endtime="20171110 18:20:56.621" starttime="20171110 18:20:56.615"></status>
+</kw>
+<status status="PASS" endtime="20171110 18:20:56.621" starttime="20171110 18:20:56.615"></status>
+</kw>
+<kw type="teardown" name="Each Test Teardown" library="keywords">
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20171110 18:20:57.200" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20171110 18:20:57.201" starttime="20171110 18:20:56.622"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20171110 18:20:57.325" starttime="20171110 18:20:57.201"></status>
+</kw>
+<status status="PASS" endtime="20171110 18:20:57.326" starttime="20171110 18:20:56.622"></status>
+</kw>
+<status status="PASS" endtime="20171110 18:20:57.326" critical="yes" starttime="20171110 18:20:53.839"></status>
+</test>
+<status status="PASS" endtime="20171110 18:20:57.328" starttime="20171110 18:20:53.734"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Login Tests" pass="1">Login Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
