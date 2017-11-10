@@ -2,7 +2,7 @@ from PageObjectLibrary import PageObject
 
 class ErrorPage(PageObject):
 
-    EXPECTED_TO_CONTAIN="Error"
+    EXPECTED_TO_CONTAIN="Eror"
 
     _locators = {
         "header_container": "id=container"
