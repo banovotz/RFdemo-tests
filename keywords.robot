@@ -1,5 +1,5 @@
 *** Settings ***
-Library     Selenium2Library
+Library     SeleniumLibrary
 Library     PageObjectLibrary
 Library     ./pageobjects/LoginPage/LoginPage.py
 Library     ./pageobjects/DashboardPage/DashboardPage.py
